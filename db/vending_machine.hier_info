@@ -1,0 +1,655 @@
+|vending_machine
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => S1.IN5
+SW[6] => S2.IN5
+SW[7] => urunuVer.IN1
+LEDG[0] <= ledY:comb_33.port2
+LEDG[1] <= ledY:comb_33.port2
+LEDG[2] <= ledY:comb_33.port2
+LEDG[3] <= ledY:comb_33.port2
+LEDR[0] <= ledK:comb_34.port1
+LEDR[1] <= ledK:comb_34.port1
+LEDR[2] <= ledK:comb_34.port1
+LEDR[3] <= ledK:comb_34.port1
+HEX5[0] <= ssd:comb_30.port1
+HEX5[1] <= ssd:comb_30.port1
+HEX5[2] <= ssd:comb_30.port1
+HEX5[3] <= ssd:comb_30.port1
+HEX5[4] <= ssd:comb_30.port1
+HEX5[5] <= ssd:comb_30.port1
+HEX5[6] <= ssd:comb_30.port1
+HEX4[0] <= ssd:comb_30.port2
+HEX4[1] <= ssd:comb_30.port2
+HEX4[2] <= ssd:comb_30.port2
+HEX4[3] <= ssd:comb_30.port2
+HEX4[4] <= ssd:comb_30.port2
+HEX4[5] <= ssd:comb_30.port2
+HEX4[6] <= ssd:comb_30.port2
+HEX3[0] <= ssd:comb_27.port1
+HEX3[1] <= ssd:comb_27.port1
+HEX3[2] <= ssd:comb_27.port1
+HEX3[3] <= ssd:comb_27.port1
+HEX3[4] <= ssd:comb_27.port1
+HEX3[5] <= ssd:comb_27.port1
+HEX3[6] <= ssd:comb_27.port1
+HEX2[0] <= ssd:comb_27.port2
+HEX2[1] <= ssd:comb_27.port2
+HEX2[2] <= ssd:comb_27.port2
+HEX2[3] <= ssd:comb_27.port2
+HEX2[4] <= ssd:comb_27.port2
+HEX2[5] <= ssd:comb_27.port2
+HEX2[6] <= ssd:comb_27.port2
+HEX1[0] <= ssd:comb_26.port1
+HEX1[1] <= ssd:comb_26.port1
+HEX1[2] <= ssd:comb_26.port1
+HEX1[3] <= ssd:comb_26.port1
+HEX1[4] <= ssd:comb_26.port1
+HEX1[5] <= ssd:comb_26.port1
+HEX1[6] <= ssd:comb_26.port1
+HEX0[0] <= ssd:comb_26.port2
+HEX0[1] <= ssd:comb_26.port2
+HEX0[2] <= ssd:comb_26.port2
+HEX0[3] <= ssd:comb_26.port2
+HEX0[4] <= ssd:comb_26.port2
+HEX0[5] <= ssd:comb_26.port2
+HEX0[6] <= ssd:comb_26.port2
+
+
+|vending_machine|muxDortBir:comb_21
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= ikiBirMux:A.port3
+
+
+|vending_machine|muxDortBir:comb_21|ikiBirMux:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_21|ikiBirMux:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_21|ikiBirMux:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_22
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= ikiBirMux:A.port3
+
+
+|vending_machine|muxDortBir:comb_22|ikiBirMux:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_22|ikiBirMux:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_22|ikiBirMux:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_23
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= ikiBirMux:A.port3
+
+
+|vending_machine|muxDortBir:comb_23|ikiBirMux:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_23|ikiBirMux:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_23|ikiBirMux:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_24
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= ikiBirMux:A.port3
+
+
+|vending_machine|muxDortBir:comb_24|ikiBirMux:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_24|ikiBirMux:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|muxDortBir:comb_24|ikiBirMux:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|ssd:comb_26
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN0
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX0.IN0
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[3] => HEX1.IN0
+SW[3] => HEX1.IN1
+SW[3] => HEX0.IN0
+SW[3] => HEX0.IN1
+SW[3] => HEX1.IN1
+SW[3] => HEX1.IN1
+SW[3] => HEX1.IN0
+SW[3] => HEX0.IN0
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX0.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX0.IN1
+HEX1[0] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= <VCC>
+HEX1[6] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|ssd:comb_27
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN0
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX0.IN0
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[3] => HEX1.IN0
+SW[3] => HEX1.IN1
+SW[3] => HEX0.IN0
+SW[3] => HEX0.IN1
+SW[3] => HEX1.IN1
+SW[3] => HEX1.IN1
+SW[3] => HEX1.IN0
+SW[3] => HEX0.IN0
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX0.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX0.IN1
+HEX1[0] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= <VCC>
+HEX1[6] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|decoder2_4:comb_28
+SW[5] => urunLed.IN0
+SW[5] => urunLed.IN0
+SW[5] => urunLed.IN0
+SW[5] => urunLed.IN0
+SW[6] => urunLed.IN1
+SW[6] => urunLed.IN1
+SW[6] => urunLed.IN1
+SW[6] => urunLed.IN1
+urunLed[0] <= urunLed.DB_MAX_OUTPUT_PORT_TYPE
+urunLed[1] <= urunLed.DB_MAX_OUTPUT_PORT_TYPE
+urunLed[2] <= urunLed.DB_MAX_OUTPUT_PORT_TYPE
+urunLed[3] <= urunLed.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+secilenUrun[0] => secilenUrun[0].IN1
+secilenUrun[1] => secilenUrun[1].IN1
+secilenUrun[2] => secilenUrun[2].IN1
+secilenUrun[3] => secilenUrun[3].IN1
+secilenUrun[4] => secilenUrun[4].IN1
+sonuc[0] <= sonuc.DB_MAX_OUTPUT_PORT_TYPE
+sonuc[1] <= sonuc.DB_MAX_OUTPUT_PORT_TYPE
+sonuc[2] <= sonuc.DB_MAX_OUTPUT_PORT_TYPE
+sonuc[3] <= sonuc.DB_MAX_OUTPUT_PORT_TYPE
+sonuc[4] <= sonuc.DB_MAX_OUTPUT_PORT_TYPE
+E4 <= fullSubtractor:comb_7.port4
+
+
+|vending_machine|fiveBitSubtractor:comb_29|halfSubtractor:comb_3
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_4
+i2 => i2.IN1
+i1 => i1.IN1
+i0 => i0.IN1
+S <= halfSubtractor:B.port2
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_4|halfSubtractor:A
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_4|halfSubtractor:B
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_5
+i2 => i2.IN1
+i1 => i1.IN1
+i0 => i0.IN1
+S <= halfSubtractor:B.port2
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_5|halfSubtractor:A
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_5|halfSubtractor:B
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_6
+i2 => i2.IN1
+i1 => i1.IN1
+i0 => i0.IN1
+S <= halfSubtractor:B.port2
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_6|halfSubtractor:A
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_6|halfSubtractor:B
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_7
+i2 => i2.IN1
+i1 => i1.IN1
+i0 => i0.IN1
+S <= halfSubtractor:B.port2
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_7|halfSubtractor:A
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|fiveBitSubtractor:comb_29|fullSubtractor:comb_7|halfSubtractor:B
+i1 => S.IN0
+i1 => E.IN0
+i0 => S.IN1
+i0 => E.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|ssd:comb_30
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX1.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN0
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX1.IN1
+SW[2] => HEX1.IN0
+SW[2] => HEX0.IN0
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[2] => HEX0.IN1
+SW[3] => HEX1.IN0
+SW[3] => HEX1.IN1
+SW[3] => HEX0.IN0
+SW[3] => HEX0.IN1
+SW[3] => HEX1.IN1
+SW[3] => HEX1.IN1
+SW[3] => HEX1.IN0
+SW[3] => HEX0.IN0
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX0.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX1.IN1
+SW[4] => HEX0.IN1
+HEX1[0] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= <VCC>
+HEX1[6] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|ledY:comb_33
+urunLed[0] => LEDG.IN0
+urunLed[1] => LEDG.IN0
+urunLed[2] => LEDG.IN0
+urunLed[3] => LEDG.IN0
+urunuVer[0] => LEDG.IN1
+urunuVer[0] => LEDG.IN1
+urunuVer[0] => LEDG.IN1
+urunuVer[0] => LEDG.IN1
+LEDG[0] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[3] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vending_machine|ledK:comb_34
+urunLed[0] => LEDR[0].DATAIN
+urunLed[1] => LEDR[1].DATAIN
+urunLed[2] => LEDR[2].DATAIN
+urunLed[3] => LEDR[3].DATAIN
+LEDR[0] <= urunLed[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= urunLed[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= urunLed[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= urunLed[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
